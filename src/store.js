@@ -20,6 +20,6 @@ const reducer = combineReducers({
     postApprove: approvePostReducer
 });
 const initialState = { userLoginLogout: { userInfo } };
-const store = createStore(reducer, initialState, compose(applyMiddleware(thunk), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()));
+const store = createStore(reducer, initialState, compose(applyMiddleware(thunk)));
 
 export default store;
